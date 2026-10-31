@@ -1,0 +1,335 @@
+/* MAIN LOADING SCREEN */
+
+.nexus-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+
+  background: #050b18;
+  color: #ffffff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  font-family: inherit;
+}
+
+/* BACKGROUND GRID */
+
+.loader-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(59, 130, 246, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(59, 130, 246, 0.045) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+
+  mask-image: radial-gradient(
+    circle,
+    black,
+    transparent 75%
+  );
+}
+
+/* BACKGROUND GLOW */
+
+.loader-glow {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+
+  border-radius: 50%;
+  filter: blur(130px);
+
+  pointer-events: none;
+}
+
+.loader-glow-one {
+  background: rgba(37, 99, 235, 0.13);
+  top: 15%;
+  left: 15%;
+}
+
+.loader-glow-two {
+  background: rgba(8, 145, 178, 0.1);
+  bottom: 10%;
+  right: 15%;
+}
+
+/* CONTENT */
+
+.loader-content {
+  position: relative;
+
+  width: 340px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* ORBIT ANIMATIONS */
+
+.loader-orbit {
+  position: absolute;
+
+  top: 0;
+  left: 50%;
+
+  border-radius: 50%;
+  border: 1px solid rgba(96, 165, 250, 0.25);
+
+  transform: translateX(-50%);
+}
+
+.orbit-a {
+  width: 180px;
+  height: 180px;
+
+  border-top: 2px solid #60a5fa;
+}
+
+.orbit-b {
+  width: 215px;
+  height: 215px;
+
+  border-right: 2px solid #818cf8;
+}
+
+.orbit-c {
+  width: 250px;
+  height: 250px;
+
+  border-bottom: 2px solid rgba(34, 211, 238, 0.7);
+}
+
+.orbit-dot {
+  position: absolute;
+
+  top: 18px;
+  left: 50%;
+
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+
+  background: #60a5fa;
+
+  box-shadow: 0 0 15px #60a5fa;
+}
+
+.orbit-dot-two {
+  background: #22d3ee;
+  box-shadow: 0 0 15px #22d3ee;
+}
+
+/* LOGO */
+
+.loader-logo {
+  position: relative;
+  z-index: 2;
+
+  width: 130px;
+  height: 130px;
+
+  margin: 43px 0 38px;
+
+  border-radius: 35px;
+
+  background: linear-gradient(
+    145deg,
+    #142b52,
+    #0b1730
+  );
+
+  border: 1px solid rgba(96, 165, 250, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #60a5fa;
+}
+
+/* SCANNER */
+
+.loader-scanner {
+  position: absolute;
+
+  top: 105px;
+
+  width: 130px;
+  height: 2px;
+
+  display: flex;
+  justify-content: center;
+
+  color: #67e8f9;
+
+  background: #67e8f9;
+
+  box-shadow: 0 0 15px #38bdf8;
+
+  z-index: 3;
+  pointer-events: none;
+}
+
+.loader-scanner svg {
+  position: absolute;
+  top: -10px;
+
+  filter: drop-shadow(0 0 7px #22d3ee);
+}
+
+/* BRAND */
+
+.loader-brand h1 {
+  font-size: 35px;
+  letter-spacing: 1px;
+
+  margin: 0;
+
+  font-weight: 700;
+}
+
+.loader-brand p {
+  font-size: 10px;
+  letter-spacing: 3px;
+
+  color: #60a5fa;
+
+  margin-top: 9px;
+}
+
+/* STATUS MESSAGE */
+
+.loader-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-top: 42px;
+
+  min-height: 25px;
+
+  color: #bfdbfe;
+  font-size: 13px;
+}
+
+.loader-status svg {
+  color: #60a5fa;
+  flex-shrink: 0;
+}
+
+/* PROGRESS BAR */
+
+.loader-progress {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.progress-heading {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 9px;
+  letter-spacing: 1px;
+
+  color: #94a3b8;
+
+  margin-bottom: 10px;
+}
+
+.progress-heading span:last-child {
+  color: #60a5fa;
+}
+
+.progress-track {
+  width: 100%;
+  height: 5px;
+
+  border-radius: 20px;
+
+  background: #17243b;
+
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #22d3ee
+  );
+
+  box-shadow: 0 0 15px #3b82f6;
+
+  border-radius: 20px;
+}
+
+/* SECURITY TEXT */
+
+.loader-security {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: #64748b;
+
+  font-size: 9px;
+  letter-spacing: 1.5px;
+
+  margin-top: 35px;
+}
+
+/* FOOTER */
+
+.loader-footer {
+  position: absolute;
+  bottom: 25px;
+
+  font-size: 9px;
+  letter-spacing: 2px;
+
+  color: #475569;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 480px) {
+  .loader-content {
+    width: 85%;
+  }
+
+  .loader-brand h1 {
+    font-size: 29px;
+  }
+
+  .loader-brand p {
+    font-size: 8px;
+    letter-spacing: 2px;
+  }
+
+  .loader-footer {
+    font-size: 8px;
+  }
+}

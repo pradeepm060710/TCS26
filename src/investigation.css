@@ -1,0 +1,351 @@
+.investigation-page {
+  min-height: 100vh;
+  background: #080d19;
+  color: #e8edf8;
+  font-family: "DM Sans", sans-serif;
+}
+
+.investigation-topbar {
+  height: 78px;
+  padding: 0 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0d1424;
+  border-bottom: 1px solid #223149;
+}
+
+.investigation-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.investigation-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, #7565f5, #28b9d8);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.investigation-brand h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 19px;
+  letter-spacing: 2px;
+}
+
+.investigation-brand span {
+  color: #7788a5;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+}
+
+.investigation-user {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #9f99ff;
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.investigation-container {
+  max-width: 1050px;
+  margin: auto;
+  padding: 35px 25px 55px;
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #9eabc0;
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.investigation-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 32px;
+}
+
+.heading-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: #b0a6ff;
+  background: #7565f526;
+  border: 1px solid #7565f544;
+}
+
+.heading-label {
+  color: #9f96ff;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  margin-bottom: 7px;
+}
+
+.investigation-heading h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 27px;
+}
+
+.investigation-heading p {
+  margin-top: 7px;
+  color: #8492aa;
+  font-size: 12px;
+}
+
+.investigation-card {
+  background: #0e1829;
+  border: 1px solid #24344c;
+  border-radius: 15px;
+  padding: 28px;
+  margin-bottom: 20px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.section-number {
+  width: 39px;
+  height: 39px;
+  display: grid;
+  place-items: center;
+  background: #7565f522;
+  color: #a99fff;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.section-heading h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+}
+
+.section-heading p {
+  color: #8290a8;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.investigation-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.field-group label,
+.category-label {
+  color: #9aa9c0;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.field-input {
+  height: 47px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px;
+  background: #101e32;
+  border: 1px solid #2b3b55;
+  border-radius: 9px;
+  color: #8595af;
+  transition: 0.2s;
+}
+
+.field-input:focus-within,
+.field-group textarea:focus {
+  border-color: #8175ff;
+  box-shadow: 0 0 0 3px #7565f51a;
+}
+
+.field-input input {
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-size: 11px;
+  color-scheme: dark;
+}
+
+.field-input input::placeholder,
+.field-group textarea::placeholder {
+  color: #6e7f99;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.field-group textarea {
+  width: 100%;
+  resize: vertical;
+  min-height: 115px;
+  padding: 14px;
+  background: #101e32;
+  border: 1px solid #2b3b55;
+  border-radius: 9px;
+  outline: none;
+  color: white;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.category-label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.claim-type-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.claim-type-option {
+  min-height: 90px;
+  padding: 15px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border-radius: 10px;
+  border: 1px solid #293b56;
+  background: #101e32;
+  color: #91a0b9;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.claim-type-option span {
+  font-size: 10px;
+}
+
+.claim-type-option:hover,
+.claim-type-option.selected {
+  border-color: #8175ff;
+  color: #b7afff;
+  background: #7565f51b;
+}
+
+.investigation-notice {
+  display: flex;
+  gap: 13px;
+  padding: 18px;
+  margin: 22px 0;
+  border: 1px solid #7565f544;
+  background: #7565f510;
+  border-radius: 11px;
+  color: #aaa0ff;
+}
+
+.investigation-notice svg {
+  flex-shrink: 0;
+}
+
+.investigation-notice h4 {
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.investigation-notice p {
+  color: #9ba8c0;
+  font-size: 10px;
+  line-height: 1.7;
+}
+
+.investigation-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.cancel-button,
+.create-button {
+  min-height: 45px;
+  padding: 0 20px;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background: transparent;
+  border: 1px solid #34435b;
+  color: #a8b5c9;
+}
+
+.create-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(110deg, #7165ed, #4e9cde);
+  color: white;
+  border: none;
+  transition: 0.2s;
+}
+
+.create-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px #6259dc44;
+}
+
+@media (max-width: 700px) {
+  .investigation-container {
+    padding: 25px 15px;
+  }
+
+  .investigation-card {
+    padding: 19px;
+  }
+
+  .investigation-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .claim-type-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .investigation-heading h1 {
+    font-size: 21px;
+  }
+
+  .investigation-user span {
+    display: none;
+  }
+}

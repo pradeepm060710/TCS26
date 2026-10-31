@@ -1,0 +1,473 @@
+/* MANAGEMENT PAGES */
+
+.management-page {
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 30px 40px;
+  background: #0b1424;
+  color: #f1f5f9;
+  font-family: inherit;
+}
+
+.management-back {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  font-size: 13px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.management-back:hover {
+  color: #38bdf8;
+}
+
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.management-eyebrow {
+  color: #38bdf8;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+.management-header h1 {
+  font-size: 30px;
+  margin: 9px 0;
+}
+
+.management-header p,
+.management-panel-heading p {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+.management-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 12px 19px;
+  border: 1px solid #2563eb;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #2563eb, #0ea5e9);
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.management-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px #2563eb35;
+}
+
+/* TEAM STATISTICS */
+
+.management-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.management-stats > div {
+  background: #111f33;
+  border: 1px solid #26364d;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.management-stats svg {
+  color: #38bdf8;
+  width: 22px;
+}
+
+.management-stats h2 {
+  font-size: 27px;
+  margin: 12px 0 5px;
+}
+
+.management-stats span {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* MANAGEMENT PANEL */
+
+.management-panel,
+.settings-panel {
+  background: #111f33;
+  border: 1px solid #26364d;
+  border-radius: 13px;
+  padding: 25px;
+  margin-bottom: 22px;
+}
+
+.management-panel-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.management-panel-heading h2,
+.settings-panel-heading h2 {
+  font-size: 17px;
+  margin-bottom: 7px;
+}
+
+.management-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0b1424;
+  border: 1px solid #26364d;
+  border-radius: 8px;
+  padding: 10px 13px;
+  color: #94a3b8;
+}
+
+.management-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 12px;
+}
+
+/* TEAM CARDS */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.team-member-card {
+  background: #0c192b;
+  border: 1px solid #26364d;
+  border-radius: 11px;
+  padding: 20px;
+  transition: 0.25s;
+}
+
+.team-member-card:hover {
+  border-color: #2563eb;
+  transform: translateY(-3px);
+}
+
+.team-member-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-member-avatar {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #1e3a8a;
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+.team-status {
+  font-size: 11px;
+  padding: 6px 10px;
+  border-radius: 20px;
+}
+
+.team-status.available {
+  background: #064e3b55;
+  color: #34d399;
+}
+
+.team-status.busy {
+  background: #92400e55;
+  color: #fbbf24;
+}
+
+.team-member-card h3 {
+  margin: 17px 0 5px;
+  font-size: 16px;
+}
+
+.team-role {
+  color: #38bdf8;
+  font-size: 12px;
+}
+
+.team-email {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #94a3b8;
+  font-size: 12px;
+  margin-top: 18px;
+  overflow-wrap: anywhere;
+}
+
+.team-member-actions {
+  display: flex;
+  gap: 10px;
+  border-top: 1px solid #26364d;
+  padding-top: 15px;
+  margin-top: 18px;
+}
+
+.team-member-actions button {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 12px;
+  border: 1px solid #26364d;
+  border-radius: 7px;
+  background: #111f33;
+  color: #cbd5e1;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.team-member-actions button:hover {
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+.team-member-actions .team-delete:hover {
+  border-color: #ef4444;
+  color: #f87171;
+}
+
+.management-empty {
+  color: #94a3b8;
+  padding: 25px;
+}
+
+/* MODAL */
+
+.management-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: #020617c9;
+}
+
+.management-modal {
+  width: 100%;
+  max-width: 450px;
+  box-sizing: border-box;
+  padding: 27px;
+  border: 1px solid #334155;
+  border-radius: 14px;
+  background: #111f33;
+}
+
+.management-modal-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.management-modal-heading h2 {
+  font-size: 19px;
+}
+
+.management-modal-heading button {
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+}
+
+.management-modal label,
+.settings-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-bottom: 18px;
+  color: #cbd5e1;
+  font-size: 12px;
+}
+
+.management-modal input,
+.management-modal select,
+.settings-form-grid input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  outline: none;
+  background: #0b1424;
+  color: white;
+  font-family: inherit;
+}
+
+.management-modal input:focus,
+.management-modal select:focus,
+.settings-form-grid input:focus {
+  border-color: #38bdf8;
+}
+
+.modal-submit {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* SETTINGS */
+
+.settings-panel-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+}
+
+.settings-panel-heading > svg {
+  color: #38bdf8;
+  width: 23px;
+  height: 23px;
+}
+
+.settings-panel-heading p,
+.settings-option p,
+.settings-theme-info p,
+.settings-security-info p {
+  color: #94a3b8;
+  font-size: 12px;
+  margin-top: 5px;
+  line-height: 1.6;
+}
+
+.settings-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.settings-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 17px 0;
+  border-top: 1px solid #26364d;
+}
+
+.settings-option strong,
+.settings-theme-info strong,
+.settings-security-info strong {
+  font-size: 13px;
+}
+
+.settings-toggle {
+  width: 43px;
+  height: 23px;
+  border: none;
+  border-radius: 20px;
+  background: #475569;
+  padding: 3px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: 0.2s;
+}
+
+.settings-toggle span {
+  display: block;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: white;
+  transition: 0.2s;
+}
+
+.settings-toggle.enabled {
+  background: #2563eb;
+}
+
+.settings-toggle.enabled span {
+  transform: translateX(20px);
+}
+
+.settings-theme-info,
+.settings-security-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 17px 0;
+  border-top: 1px solid #26364d;
+}
+
+.settings-theme-info > svg,
+.settings-security-info > svg {
+  color: #38bdf8;
+  flex-shrink: 0;
+}
+
+.settings-theme-info > div,
+.settings-security-info > div {
+  flex: 1;
+}
+
+.settings-theme-info > span {
+  color: #34d399;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.settings-success {
+  padding: 13px 17px;
+  margin-bottom: 20px;
+  border: 1px solid #059669;
+  border-radius: 8px;
+  background: #064e3b55;
+  color: #34d399;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+  .management-page {
+    padding: 22px 16px;
+  }
+
+  .management-header,
+  .management-panel-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .management-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .team-grid,
+  .settings-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .management-search {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
